@@ -1,0 +1,14 @@
+diff --git a/drivers/usb/udc/udc_dwc2.h b/drivers/usb/udc/udc_dwc2.h
+index dc1c7c5c8..6c5839c03 100644
+--- a/drivers/usb/udc/udc_dwc2.h
++++ b/drivers/usb/udc/udc_dwc2.h
+@@ -154,6 +154,9 @@ static inline struct usb_dwc2_reg *dwc2_get_base(const struct device *dev)
+ 	return (struct usb_dwc2_reg *)DEVICE_MMIO_NAMED_GET(dev, core);
+ }
+ 
++#if DT_HAS_COMPAT_STATUS_OKAY(artery_at32_otg_dwc2)
++#include "udc_dwc2_artery_otgfs.h"
++#endif
+ #if DT_HAS_COMPAT_STATUS_OKAY(espressif_esp32_usb_otg_fs)
+ #include "udc_dwc2_esp32_usb_otg_fs.h"
+ #endif
