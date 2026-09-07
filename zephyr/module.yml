@@ -1,0 +1,9 @@
+name: zephyr-at32-module
+build:
+  cmake: .
+  kconfig: Kconfig
+  settings:
+    board_root: .
+    soc_root: .
+    dts_root: .
+    module_ext_root: .

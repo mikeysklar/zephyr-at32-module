@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: Apache-2.0
+
+if CLOCK_CONTROL
+rsource "clock_control/Kconfig"
+endif
+
+if GPIO
+rsource "gpio/Kconfig"
+endif
+
+if PINCTRL
+rsource "pinctrl/Kconfig"
+endif
+
+if RESET
+rsource "reset/Kconfig"
+endif
+
+rsource "interrupt_controller/Kconfig"
+
+if SERIAL
+rsource "serial/Kconfig"
+endif
+
+if FLASH
+rsource "flash/Kconfig"
+endif

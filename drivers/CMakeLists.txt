@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+
+add_subdirectory_ifdef(CONFIG_CLOCK_CONTROL_AT32 clock_control)
+add_subdirectory_ifdef(CONFIG_GPIO_AT32 gpio)
+add_subdirectory_ifdef(CONFIG_PINCTRL pinctrl)
+add_subdirectory_ifdef(CONFIG_RESET_AT32 reset)
+add_subdirectory_ifdef(CONFIG_AT32_EXINT interrupt_controller)
+add_subdirectory_ifdef(CONFIG_USART_AT32 serial)
+add_subdirectory_ifdef(CONFIG_SOC_FLASH_AT32 flash)
