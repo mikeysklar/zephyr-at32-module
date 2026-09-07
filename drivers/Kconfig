@@ -25,3 +25,27 @@ endif
 if FLASH
 rsource "flash/Kconfig"
 endif
+
+if DMA
+rsource "dma/Kconfig"
+endif
+
+if ADC
+rsource "adc/Kconfig"
+endif
+
+if PWM
+rsource "pwm/Kconfig"
+endif
+
+if I2C
+rsource "i2c/Kconfig"
+endif
+
+if SPI
+rsource "spi/Kconfig"
+endif
+
+if COUNTER
+rsource "counter/Kconfig"
+endif
