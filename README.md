@@ -154,10 +154,10 @@ libraries and are expected when only out-of-tree drivers are selected.
 
 | Sample | Flash | RAM | Tree |
 |---|---|---|---|
-| samples/basic/blinky | 16092 B | 4208 B | adafruit/zephyr 52dc937c7 (CircuitPython zephyr-cp tree) |
-| samples/hello_world | 15564 B | 4208 B | wt-pr64 zephyr 4.4.99 |
-| samples/drivers/flash_shell | 71932 B | 44120 B | wt-pr64 zephyr 4.4.99, exercises flash driver |
-| blinky + CONFIG_SPI/I2C/PWM/ADC/DMA/COUNTER, ADC_AT32_DMA, SPI_AT32_DMA | 29516 B | 7664 B | wt-pr64 zephyr 4.4.99, all tier-2 drivers compiled |
+| samples/basic/blinky | 16092 B | 4208 B | adafruit/zephyr 52dc937c7 (CircuitPython zephyr-cp workspace) |
+| samples/hello_world | 15564 B | 4208 B | adafruit/zephyr 52dc937c7 |
+| samples/drivers/flash_shell | 71932 B | 44120 B | adafruit/zephyr 52dc937c7, exercises flash driver |
+| blinky + CONFIG_SPI/I2C/PWM/ADC/DMA/COUNTER, ADC_AT32_DMA, SPI_AT32_DMA | 29516 B | 7664 B | adafruit/zephyr 52dc937c7, all tier-2 drivers compiled |
 | samples/subsys/usb/cdc_acm | 61472 B | 17952 B | scratch zephyr 52dc937c7 + patches/zephyr-udc-dwc2-artery-quirk.patch |
 
 All builds: SDK 1.0.1, `-DZEPHYR_EXTRA_MODULES=<module>;<hal_at32>`. Nothing has been
